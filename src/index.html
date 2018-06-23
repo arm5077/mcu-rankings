@@ -1,8 +1,14 @@
 <!doctype html>
 <html>
 <head>
+  <title>Rank the Marvel Cinematic Universe</title>
+  <meta name="description" content="The only thing better than watching an MCU movie is arguing with your friends about which MCU movie is the best." />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
-  hello world
+  <div id="app">
+    <cards v-for='card in cards' :key='card.elements[0]' v-bind:card='card' v-on:submitted="recieved"></cards>
+    <results v-bind:movies='master' v-if="master.length >= 19"></results>
+  </div>
 </body>
 </html>

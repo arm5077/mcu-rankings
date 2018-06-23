@@ -1,0 +1,41 @@
+body {
+  font-family: Helvetica, sans-serif;
+  font-weight: 300;
+  margin: 0;
+}
+
+.ghost {
+  opacity: 0.4;
+}
+
+#mcu-list {
+  
+  ul {
+  padding: 0;
+  margin: 0;
+  }
+  
+  label, li {
+    cursor: pointer;
+    box-sizing: border-box;
+    padding: 20px 5px;
+    border-bottom: 1px solid #ccc;
+    background-color: #fafafa;
+    display: block;
+  }
+  
+  button {
+    display: block;
+    border: 0;
+    background: none;
+    background-color: red;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 20px;
+    text-align: left;
+    font-size: 16px;
+    color: white;
+    cursor: pointer;
+  }
+  
+}
